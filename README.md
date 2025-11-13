@@ -17,8 +17,8 @@ This codebase utilizes:
 
 This repository is licensed under the MIT License.
 
-- Original codebase (RMA implementation) by (**Haozhi Qi**)[https://github.com/HaozhiQi] (© 2022)  
-- Modifications and integration by (**WonikRobotics_official**)[https://github.com/Wonikrobotics-git] (© 2025)  
+- Original codebase (RMA implementation) by [**Haozhi Qi**](https://github.com/HaozhiQi) (© 2022)  
+- Modifications and integration by [**WonikRobotics_official**](https://github.com/Wonikrobotics-git) (© 2025)  
 - Additional contributions by [**Jungyeon Lee**](https://github.com/curieuxjy) (© 2025)
 
 The full license text is available in the [LICENSE](./LICENSE) file.
