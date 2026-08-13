@@ -24,3 +24,140 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+THIS SOFTWARE AND/OR DATA WAS DEPOSITED IN THE BAIR OPEN RESEARCH COMMONS
+REPOSITORY ON October 10, 2022.
+
+
+==========================================================
+THIRD-PARTY SOFTWARE AND ASSET NOTICES
+==========================================================
+
+This repository incorporates code and assets from the projects listed
+below. All of them are distributed under permissive licenses that allow
+commercial use, subject to the attribution requirements reproduced here.
+Per-file provenance is documented in the source headers and in NOTICE.
+
+----------------------------------------------------------
+1. HORA — In-Hand Object Rotation via Rapid Motor Adaptation
+----------------------------------------------------------
+Copyright (c) 2022 Haozhi Qi
+License: MIT License (see the grant above)
+Repository:   https://github.com/HaozhiQi/hora
+Project page: https://haozhi.io/hora/
+Paper:        H. Qi, A. Kumar, R. Calandra, Y. Ma, J. Malik,
+              "In-Hand Object Rotation via Rapid Motor Adaptation",
+              CoRL 2022, arXiv:2210.04887
+
+STATUS: This repository is a derivative work of HORA. HORA source code,
+configuration files, and simulation assets are INCLUDED, both unmodified
+and in modified form.
+
+----------------------------------------------------------
+2. IsaacGymEnvs
+----------------------------------------------------------
+Copyright (c) 2018-2022, NVIDIA Corporation
+License: BSD 3-Clause License
+Repository: https://github.com/NVIDIA-Omniverse/IsaacGymEnvs
+
+STATUS: Portions of the vectorized task base class, observation
+normalization, and configuration formatting utilities derive from
+IsaacGymEnvs, reaching this repository through HORA.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+----------------------------------------------------------
+3. rl_games
+----------------------------------------------------------
+Copyright (c) 2019 Denys Makoviichuk (Denys88)
+License: MIT License
+Repository: https://github.com/Denys88/rl_games
+
+STATUS: The PPO trainer and experience buffer derive from rl_games,
+reaching this repository through HORA. The MIT terms reproduced in the
+grant at the top of this file apply to that material.
+
+----------------------------------------------------------
+4. YCB Object and Model Set
+----------------------------------------------------------
+Copyright (c) Yale University, Carnegie Mellon University,
+              University of California Berkeley
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+         for the dataset; MIT License for the accompanying code
+Project: https://www.ycbbenchmarks.com/
+Full license: https://creativecommons.org/licenses/by/4.0/
+
+Citation:
+  B. Calli, A. Walsman, A. Singh, S. Srinivasa, P. Abbeel, A. M. Dollar,
+  "Benchmarking in Manipulation Research: Using the Yale-CMU-Berkeley
+  Object and Model Set", IEEE Robotics & Automation Magazine,
+  vol. 22, no. 3, pp. 36-52, 2015.
+
+STATUS: The tennis ball object model (056_tennis_ball, google_16k) is
+INCLUDED in this repository under assets/ycb/ and assets/sphere/default/ycb/.
+CHANGES MADE: convex decomposition meshes for simulation (V-HACD) and
+URDF wrappers were generated from the original scan data. The original
+mesh and texture data are otherwise unaltered.
+
+----------------------------------------------------------
+5. NVIDIA Isaac Gym (Preview Release)
+----------------------------------------------------------
+Copyright (c) NVIDIA Corporation
+License: Proprietary — NVIDIA Isaac Gym License Agreement
+Download: https://developer.nvidia.com/isaac-gym
+
+STATUS: Not included or redistributed. Isaac Gym is a required runtime
+dependency for training and must be obtained directly from NVIDIA under
+their own license terms.
+
+----------------------------------------------------------
+6. allegro_hand_ros2 — Allegro Hand ROS2 Controller
+----------------------------------------------------------
+Copyright (c) Wonik Robotics
+License: BSD (as declared in the package.xml manifests)
+Repository: https://github.com/Wonikrobotics-git/allegro_hand_ros2
+
+STATUS: Runtime dependency for hardware deployment. Not included in
+this repository.
+
+
+==========================================================
+SUMMARY
+==========================================================
+
+All incorporated components are permissively licensed. This repository,
+including the third-party material listed above, may be used, modified,
+and redistributed for commercial purposes, provided that the copyright
+notices, license texts, and attributions in this file are retained.
+
+Two obligations warrant particular attention:
+
+  - BSD 3-Clause (IsaacGymEnvs): the name of NVIDIA Corporation and its
+    contributors may not be used to endorse or promote products derived
+    from this software without prior written permission.
+
+  - CC BY 4.0 (YCB): attribution and an indication of changes must be
+    retained wherever the object models are redistributed.
